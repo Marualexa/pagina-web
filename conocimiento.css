@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Bebas Neue', cursive;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+:root {
+    --color-teal: #06283D;
+    --blue-oscuro: #0D4C92;
+    --tex-black: #201E1C;
+    --text-while: #FFFFFF;
+    --color1: #2B4865;
+}
+
+
+.main-container {
+    width: 100%;
+    height: auto;
+}
+
+.container-array {
+    width: 30px;
+    height: 30px;
+    display: grid;
+    justify-content: center;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.array-photo {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.main-container-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "card-11 card-12 card-13"
+        "card-21 vacio card-23"
+        ;
+    gap: 20px;
+    padding: 50px;
+}
+
+.main-card {
+    width: 300px;
+    height: 200px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    transition: 0.4s linear, height 0.4s ease-in-out;
+}
+
+.imag-conoci {
+    object-fit: contain;
+    width: 160px;
+    height: 160px;
+    justify-self: center;
+}
+
+.react {
+    background-color: var(--color-teal);
+    grid-area: card-11;
+}
+.vuejs {
+    grid-area: card-12;
+    background-color: var(--color-teal);
+}
+
+.angular {
+    grid-area: card-13;
+    background-color: var(--color-teal);
+}
+
+.maquetacion {
+    grid-area: card-21;
+    background-color: var(--color-teal);
+}
+
+.otros {
+    grid-area: card-23;
+    background-color: var(--color-teal);
+}
+.imag-conoci-otro {
+    width: 220px;
+    object-fit: contain;
+    justify-self: center;
+}
+
+.main-card ul {
+    list-style: none;
+    opacity: 0;
+    height: 0;
+    transition: 2s linear, all 0s ease-in;
+    opacity: 0;
+}
+
+.main-card:hover ul {
+    opacity: 1;
+    height: auto;
+}
+.main-card li {
+    color: var(--text-while);
+}
+
+.main-card span {
+    display: flex;
+    justify-self: center;
+    width: 13px;
+    height: 8px;
+    margin-bottom: 10px;
+    background-image: url("./iconos/down-arrow.svg");
+}
+
+.main-card:hover {
+    height: 400px;
+    background-color: var(--blue-oscuro);
+}

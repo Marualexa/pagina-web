@@ -1,0 +1,11 @@
+{
+  "name": "pagina-web-de-joel",
+  "version": "1.0.0",
+  "description": "proyecto para el desarrollo de la pagina de web de un cliente",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mariana Contreras",
+  "license": "MIT"
+}
