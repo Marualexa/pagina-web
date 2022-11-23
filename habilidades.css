@@ -15,6 +15,13 @@
     --color1: #2B4865;
 }
 
+#particles-js {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+}
+
 
 .container-main-items {
     width: 100%;
@@ -25,6 +32,9 @@
     justify-content: center;
     align-items: center;
     padding: 40px 40px 40px 40px;
+    position: relative;
+    z-index: 99;
+    opacity: .85;
 }
 
 .main-array {
@@ -50,7 +60,7 @@
     grid-template-areas:
         "card-11 card-12 card-13"
         "card-21 vacio card-23"
-        ;
+    ;
     gap: 20px;
     padding: 50px;
 }
@@ -58,22 +68,32 @@
 .main-card {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 130px 80px;
     width: 260px;
-    height: 200px;
+    height: 212px;
     justify-content: center;
     align-items: center;
     justify-self: center;
+    border-radius: 0px;
+    background-color: #17A589;
+    -webkit-transition: 1s linear;
+    transition: 0.5s linear
 }
+
+.main-card:hover {
+    border-radius: 20px;
+}
+
 
 .title-container {
     text-align: center;
     padding-left: 10px;
     padding-right: 10px;
+    color: var(--text-while);
 }
 
 .equipo {
-    background-color: var(--blue-oscuro);
+    background-color: var(--color1);
     grid-area: card-11;
 }
 
@@ -82,13 +102,15 @@
     height: 160px;
     object-fit: contain;
     justify-self: center;
+    margin-top: 35px;
 }
 
 
 .optimizacion {
     grid-area: card-12;
-    background-color: var(--blue-oscuro);
+    background-color: var(--color1);
 }
+
 .img-optimizacion {
     object-fit: contain;
     width: 90px;
@@ -98,8 +120,9 @@
 
 .trello {
     grid-area: card-13;
-    background-color: var(--blue-oscuro);
+    background-color: var(--color1);
 }
+
 .img-trello {
     object-fit: contain;
     width: 140px;
@@ -109,7 +132,7 @@
 
 .desarrollo {
     grid-area: card-21;
-    background-color: var(--blue-oscuro);
+    background-color: var(--color1);
 }
 
 .img-desarrollo {
@@ -121,13 +144,12 @@
 
 .github {
     grid-area: card-23;
-    background-color: var(--blue-oscuro);
+    background-color: var(--color1);
 }
 
 .img-github {
     object-fit: contain;
-    width: 170px;
+    width: 110px;
     justify-self: center;
     margin-top: 25px;
 }
-

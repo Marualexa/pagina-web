@@ -169,8 +169,8 @@ main {
     font-weight: bold;
     line-height: 1.8rem;
     color: var(--tex-black);
-    -webkit-transition: background-color 1s linear;
-    transition: background-color 1s linear;
+    -webkit-transition: background-color 0.5s linear;
+    transition: background-color 0.5s linear;
 }
 
 .button-info:hover {
@@ -235,26 +235,6 @@ main {
     color: var(--text-while)
 }
 
-.html {
-    display: inline-block;
-    width: 149px;
-    height: 157px;
-    margin-bottom: 10px;
-    background-image: url("./assets/logo-html.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    -webkit-transition: 1s linear;
-    transition: 1s linear;
-    background-color: var(--blue-oscuro);
-}
-
-.html:hover {
-    -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
-    box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
-}
-
-
 .css {
     display: inline-block;
     width: 149px;
@@ -311,6 +291,27 @@ main {
     -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
     box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
 }
+
+.github {
+    display: inline-block;
+    width: 149px;
+    height: 157px;
+    margin-bottom: 10px;
+    background-image: url("./assets/gitHud.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transition: 0s linear;
+    transition: 0s linear;
+    background-color: var(--blue-oscuro);
+}
+
+.github:hover {
+    -webkit-box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+    box-shadow: 10px 10px 14px 2px rgba(0, 0, 0, 0.47);
+}
+
+
 
 
 @media (min-width: 930px) {

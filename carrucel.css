@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-teal: #06283D;
+    --blue-oscuro: #0D4C92;
+    --tex-black: #201E1C;
+    --text-while: #FFFFFF;
+    --color1: #2B4865;
+}
+
+#conte-items-carrusel {
+    margin: 100px 100px;
+    height: 200px;
+    overflow: hidden;
+}
+
+.item-carrusel {
+    border: 1px solid black;
+    height: 100%;
+    position: relative;
+}
+
+.tarjeta-carrisel {
+    background-color: #2B4865;
+    height: 100%;
+}
+
+.flechas-carrusel {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
