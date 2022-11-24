@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-teal: #06283D;
+    --blue-oscuro: #0D4C92;
+    --tex-black: #201E1C;
+    --text-while: #FFFFFF;
+    --color1: #2B4865;
+}
+
+#container-item-carrusel {
+    margin: 100px 100px 19px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.itemCarrusel {
+    height: 100%;
+    position: relative;
+}
+
+.tarjeta-carrisel {
+    height: 100%;
+}
+
+.flechas-carrusel {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+
+#tarjeta-carrusel1-1 {
+    background-color: aqua;
+}
+
+#tarjeta-carrusel1-2 {
+    background-color: violet;
+}
+
+#tarjeta-carrusel1-3 {
+    background-color: #06283D;
+}
+
+a {
+    text-decoration: none;
+}
+
+.flechas-carrusel i {
+    color: var(--text-while);
+}
+
+#conte-punto {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+#conte-punto > a {
+    font-size: 1em;
+    font-style: none;
+    color: #201E1C;
+}
+
+
+
+#tarjeta-carrusel1-4 {
+    background-color: #2B4865;
+}
+
+#tarjeta-carrusel1-5 {
+    background-color: tomato;
+}
+
+#tarjeta-carrusel1-6 {
+    background-color: aquamarine;
+}
+
+#tarjeta-carrusel1-7 {
+    background-color: blue;
+}
+
+#tarjeta-carrusel1-8 {
+    background-color: blueviolet;
+}
+
+#tarjeta-carrusel1-9 {
+    background-color: brown;
+}
+
+#tarjeta-carrusel1-10 {
+    background-color: chartreuse;
+}
