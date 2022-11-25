@@ -38,30 +38,17 @@
     padding: 20px;
 }
 
-
-#tarjeta-carrusel1-1 {
-    background-color: aqua;
-}
-
-#tarjeta-carrusel1-2 {
-    background-color: violet;
-}
-
-#tarjeta-carrusel1-3 {
-    background-color: #06283D;
-}
-
 a {
     text-decoration: none;
 }
 
 .flechas-carrusel i {
-    color: var(--text-while);
+    color: var(--tex-black);
 }
 
 #conte-punto {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
 }
 #conte-punto > a {
@@ -70,32 +57,8 @@ a {
     color: #201E1C;
 }
 
-
-
-#tarjeta-carrusel1-4 {
-    background-color: #2B4865;
-}
-
-#tarjeta-carrusel1-5 {
-    background-color: tomato;
-}
-
-#tarjeta-carrusel1-6 {
-    background-color: aquamarine;
-}
-
-#tarjeta-carrusel1-7 {
-    background-color: blue;
-}
-
-#tarjeta-carrusel1-8 {
-    background-color: blueviolet;
-}
-
-#tarjeta-carrusel1-9 {
-    background-color: brown;
-}
-
-#tarjeta-carrusel1-10 {
-    background-color: chartreuse;
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
